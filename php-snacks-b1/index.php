@@ -53,19 +53,21 @@ error_reporting(E_ALL);
      ?>
 
      <?php 
-          for($i, $i < count($partite); $i++;) {
+          for($i=0; $i < count($partite); $i++) {
             $current_partite = $partite[$i];
      ?>
         <div>
-            <h3> echo $current_partite["sqiadraIn"]; </h3>
-            <h3> echo $current_partite["sqiadraOut"]; </h3>
-            <h3> echo $current_partite["puntiIn"]; </h3>
-            <h3> echo $current_partite["puntiOut"]; </h3>
+               <p>
+               <?php echo $current_partite["squadraIn"];  ?> - <?php echo $current_partite["squadraOut"]; ?> | <?php echo $current_partite["puntiIn"];    ?> -  <?php echo $current_partite["puntiOut"];   ?>
+
+               </p>
 
         </div>
      <?php 
         };
      ?>
+
+     <?php ?>
 
 
 
